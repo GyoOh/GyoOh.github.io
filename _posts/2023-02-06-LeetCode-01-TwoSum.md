@@ -1,7 +1,9 @@
 ---
 layout: post
 title: " LeetCode : 01. Two Sum"
-
+categories: LeetCode
+author: GyoOh
+use_math: true
 ---
 
 
