@@ -2,8 +2,8 @@
 layout: post
 title: " LeetCode : 01. Two Sum"
 categories: LeetCode
-author: GyoOh
-use_math: true
+author: GyoOh 
+
 ---
 
 
@@ -56,5 +56,8 @@ var twoSum = function(nums, target) {
 };
 ```
 ---
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/master
 ![logo](../images/2023-02-06-LeetCode-01-TwoSum/logo.png)
