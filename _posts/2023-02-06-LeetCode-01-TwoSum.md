@@ -2,7 +2,7 @@
 layout: single
 title: ' LeetCode : 01. Two Sum'
 categories: coding
-tag: leetcode
+tag: [leetcode, blog, jekyll, 01]
 author: GyoOh
 ---
 
