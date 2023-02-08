@@ -1,8 +1,8 @@
 ---
 layout: single
-title: ' LeetCode : 01. Two Sum'
+title: ' LeetCode : 02. Two Sum'
 categories: coding
-tag: [leetcode, blog, jekyll, 02]
+tag: [leetcode, blog, jekyll]
 author: GyoOh
 ---
 
@@ -45,15 +45,74 @@ Output: [8,9,9,9,0,0,0,1]
 ### Code
 
 ```
-var twoSum = function(nums, target) {
-     for (var i = 0; i < nums.length; i++) {
-        for (var j = i + 1; j < nums.length; j++) {
-            if (nums[i] + nums[j] === target) {
-                return [i, j];
-            }
-        }
+var addTwoNumbers = function (l1, l2) {
+    let firstNum = ""
+    let secondNum = "";
+    for (let i = l1.length - 1; i > -1; i--) {
+        firstNum += l1[i].toString()
     }
+    for (let i = l2.length - 1; i > -1; i--) {
+        secondNum += l2[i].toString();
+    }
+    const result = (Number(firstNum) + Number(secondNum)).toString();
+    let lastNum = ""
+    for (let i = result.length - 1; i > -1; i--) {
+        lastNum += result[i]
+    }
+    return lastNum
+};
+(addTwoNumbers([2, 4, 3], [5, 6, 4]))
+
+
+```
+
+---
+
+I needed to use nodeList which can be made by new
+
+```
+let current = new ListNode(0);
+```
+
+Withs this new list, I needed to make another logic
+
+```
+var addTwoNumbers = function(l1, l2) {
+
+    let sum = 0;
+    let current = new ListNode(0);
+    let result = current;
+
+    while(l1 || l2) {
+
+        if(l1) {
+            sum += l1.val;
+            l1 = l1.next;
+        }
+
+        if(l2) {
+            sum += l2.val;
+            l2 = l2.next;
+        }
+
+        current.next = new ListNode(sum % 10);
+        current = current.next;
+
+        sum = sum > 9 ? 1 : 0;
+    }
+
+    if(sum) {
+        current.next = new ListNode(sum);
+    }
+
+    return result.next;
 };
 ```
+
+---
+
+### Reference
+
+@https://leetcode.com/problems/add-two-numbers/solutions/3149937/simple-js-solution-o-max-m-n-time-o-max-m-n-space/
 
 ---
