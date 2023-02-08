@@ -1,6 +1,6 @@
 ---
 layout: single
-title: ' LeetCode : 02. Two Sum'
+title: ' LeetCode : 02. Add Two Numbers'
 categories: coding
 tag: [leetcode, blog, jekyll]
 author: GyoOh
