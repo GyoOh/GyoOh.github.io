@@ -56,4 +56,4 @@ var twoSum = function(nums, target) {
 };
 ```
 ---
-![logo](assets/images/2023-02-06-LeetCode-01-TwoSum/logo.png)
+![logo](../assets/images/2023-02-06-LeetCode-01-TwoSum/logo.png)
